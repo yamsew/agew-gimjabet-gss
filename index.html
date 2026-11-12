@@ -76,7 +76,7 @@
             <div id="success-msg" class="hidden-msg">መረጃዎ በተሳካ ሁኔታ ተመዝግቧል! እናመሰግናለን።</div>
         </section>
 
-        <!-- አዲስ የተጨመረው የውጤት ማጣሪያ ክፍል (Result Checker) -->
+        <!-- የውጤት ማጣሪያ ክፍል -->
         <section id="results" class="section-card">
             <h2><i class="fa-solid fa-square-poll-vertical"></i> የሴሚስተር ውጤት ማጣሪያ</h2>
             <p>የመለያ ቁጥርዎን (ID Number) በማስገባት የፈተና ውጤትዎን ይመልከቱ።</p>
@@ -85,9 +85,7 @@
                 <input type="text" id="student-id" placeholder="የመለያ ቁጥር ያስገቡ (ለምሳሌ: AGSS-101)">
                 <button id="check-result-btn" class="btn-main" style="border:none; cursor:pointer;">ውጤት አሳይ</button>
             </div>
-            <div id="result-display" class="result-display-box" style="display:none;">
-                <!-- የውጤት ዝርዝር እዚህ በጃቫስክሪፕት ይታያል -->
-            </div>
+            <div id="result-display" class="result-display-box" style="display:none;"></div>
         </section>
 
         <!-- የፈተና ዶክመንቶች ማውረጃ (PDF Exams) -->
@@ -111,10 +109,27 @@
             </div>
         </section>
 
+        <!-- አዲስ የተጨመረው እኛን የማግኘት እና ማህበራዊ ሚዲያ ክፍል -->
         <section id="contact" class="section-card">
-            <h2><i class="fa-solid fa-address-book"></i> እኛን ለማግኘት</h2>
-            <p>አድራሻ፡ አገው ግምጅቤት፣ አማራ፣ ኢትዮጵያ</p>
-            <p>ኢሜይል፡ info@agewgimjabetgss.edu.et | ስልክ፡ +251 9xxxxxxxx</p>
+            <h2><i class="fa-solid fa-address-book"></i> እኛን ለማግኘት እና ማህበራዊ ሚዲያዎቻችን</h2>
+            <p>ለማንኛውም መረጃ ወይም ጥያቄ ከታች ባሉት አድራሻዎች ሊያገኙን ይችላሉ።</p>
+            
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <p><i class="fa-solid fa-location-dot"></i> <strong>አድራሻ፡</strong> አገው ግምጅቤት፣ አማራ፣ ኢትዮጵያ</p>
+                    <p><i class="fa-solid fa-envelope"></i> <strong>ኢሜይል፡</strong> info@agewgimjabetgss.edu.et</p>
+                    <p><i class="fa-solid fa-phone"></i> <strong>ስልክ ቁጥር፡</strong> +251 9xxxxxxxx / +251 58xxxxxxxx</p>
+                </div>
+                
+                <div class="social-links">
+                    <h3>ማህበራዊ ሚዲያ ገጾቻችን</h3>
+                    <div class="social-icons">
+                        <a href="https://t.me/agewgimjabetgss" target="_blank" class="social-btn telegram"><i class="fa-brands fa-telegram"></i> ቴሌግራም</a>
+                        <a href="https://facebook.com" target="_blank" class="social-btn facebook"><i class="fa-brands fa-facebook"></i> ፌስቡክ</a>
+                        <a href="https://youtube.com" target="_blank" class="social-btn youtube"><i class="fa-brands fa-youtube"></i> ዩቲዩብ</a>
+                    </div>
+                </div>
+            </div>
         </section>
 
     </main>
