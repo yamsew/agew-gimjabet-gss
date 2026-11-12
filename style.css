@@ -346,3 +346,32 @@ footer {
         flex-direction: column;
     }
 }
+/* የጋለሪ ፎቶዎች ማስተካከያ */
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.gallery-item {
+    background: #f8f9fa;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+}
+
+.gallery-item p {
+    margin-top: 10px;
+    font-weight: 600;
+    color: #0f5132;
+}
