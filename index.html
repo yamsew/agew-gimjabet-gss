@@ -1,40 +1,122 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="am">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Agew Gimjabet General Secondary School</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
 
     <header>
-        <div class="container">
-            <h1>አገው ግምጅቤት አጠቃላይ ሁለተኛ ደረጃ ትምህርት ቤት</h1>
-            <p>Agew Gimjabet General Secondary School Website</p>
+        <div class="container header-content">
+            <div class="logo">
+                <i class="fa-solid fa-graduation-cap"></i>
+                <h1>አገው ግምጅቤት <span>አ/ሁ/ደ/ትምህርት ቤት</span></h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#home">መነሻ</a></li>
+                    <li><a href="#about">ስለ እኛ</a></li>
+                    <li><a href="#register">ምዝገባ</a></li>
+                    <li><a href="#results">የውጤት ማጣሪያ</a></li>
+                    <li><a href="#exams">የፈተና ኖቶች (PDF)</a></li>
+                    <li><a href="#contact">አግኙን</a></li>
+                </ul>
+            </nav>
         </div>
-        <nav>
-            <ul>
-                <li><a href="#home">መነሻ</a></li>
-                <li><a href="#about">ስለ እኛ</a></li>
-                <li><a href="#news">ዜናዎች</a></li>
-                <li><a href="#contact">አግኙን</a></li>
-            </ul>
-        </nav>
     </header>
 
+    <section id="home" class="hero">
+        <div class="hero-text">
+            <h2>ለተሻለ እውቀት እና ስነ-ምግባር!</h2>
+            <p>ወደ አገው ግምጅቤት አጠቃላይ ሁለተኛ ደረጃ ትምህርት ቤት ኦፊሴላዊ ድረ-ገጽ በደህና መጡ። ጥራቱን የጠበቀ ትምህርት እና አገልግሎቶችን እዚህ ያገኛሉ።</p>
+            <a href="#register" class="btn-main">አሁን ይመዝገቡ</a>
+        </div>
+    </section>
+
     <main class="container">
-        <section id="home" class="card">
-            <h2>እንኳን ደህና መጡ!</h2>
-            <p>ወደ ትምህርት ቤታችን ኦፊሴላዊ የድረ-ገጽ ማሻሻያ ፕሮጀክት በደህና መጡ። እዚህ ስለ ትምህርት ቤቱ መረጃዎች እና ማስታወቂያዎችን ያገኛሉ።</p>
-            <button id="welcome-btn" class="btn">መልዕክት ለማየት እዚህ ይጫኑ</button>
-            <p id="message-box" style="margin-top: 10px; font-weight: bold; color: #2e7d32;"></p>
+        
+        <section id="about" class="section-card">
+            <h2><i class="fa-solid fa-school"></i> ስለ ትምህርት ቤታችን</h2>
+            <p>ትምህርት ቤታችን ተማሪዎችን በዕውቀት፣ በክህሎት እና በስነ-ምግባር በማነጽ ለሀገር የሚጠቅሙ ብቁ ባለሙያዎችን እና ምሁራንን እያፈራ የሚገኝ ታላቅ ተቋም ነው።</p>
         </section>
 
-        <section id="about" class="card">
-            <h2>ስለ ትምህርት ቤቱ</h2>
-            <p>ትምህርት ቤታችን ተማሪዎችን በጥራት እውቀት እና ስነ-ምግባር ለማብቃት በትጋት እየሰራ የሚገኝ ተቋም ነው።</p>
+        <!-- የተማሪዎች ምዝገባ ፎርም -->
+        <section id="register" class="section-card">
+            <h2><i class="fa-solid fa-user-plus"></i> የተማሪዎች ኦንላይን ምዝገባ ፎርም</h2>
+            <p>አዲስ የሚገቡ ተማሪዎች ከታች ያለውን ቅጽ በመሙላት ምዝገባዎን ማከናወን ይችላሉ።</p>
+            
+            <form id="reg-form" class="form-grid">
+                <div class="form-group">
+                    <label>ሙሉ ስም:</label>
+                    <input type="text" id="fullname" placeholder="ስም እና የአባት ስም" required>
+                </div>
+                <div class="form-group">
+                    <label>እድሜ:</label>
+                    <input type="number" id="age" placeholder="እድሜዎ" required>
+                </div>
+                <div class="form-group">
+                    <label>የሚገቡበት ክፍል:</label>
+                    <select id="grade" required>
+                        <option value="">ክፍል ይምረጡ</option>
+                        <option value="9ኛ ክፍል">9ኛ ክፍል</option>
+                        <option value="10ኛ ክፍል">10ኛ ክፍል</option>
+                        <option value="11ኛ ክፍል">11ኛ ክፍል</option>
+                        <option value="12ኛ ክፍል">12ኛ ክፍል</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>ስልክ ቁጥር:</label>
+                    <input type="tel" id="phone" placeholder="09xxxxxxxx" required>
+                </div>
+                <button type="submit" class="btn-submit">ይመዝገቡ</button>
+            </form>
+            <div id="success-msg" class="hidden-msg">መረጃዎ በተሳካ ሁኔታ ተመዝግቧል! እናመሰግናለን።</div>
         </section>
+
+        <!-- አዲስ የተጨመረው የውጤት ማጣሪያ ክፍል (Result Checker) -->
+        <section id="results" class="section-card">
+            <h2><i class="fa-solid fa-square-poll-vertical"></i> የሴሚስተር ውጤት ማጣሪያ</h2>
+            <p>የመለያ ቁጥርዎን (ID Number) በማስገባት የፈተና ውጤትዎን ይመልከቱ።</p>
+            
+            <div class="result-box">
+                <input type="text" id="student-id" placeholder="የመለያ ቁጥር ያስገቡ (ለምሳሌ: AGSS-101)">
+                <button id="check-result-btn" class="btn-main" style="border:none; cursor:pointer;">ውጤት አሳይ</button>
+            </div>
+            <div id="result-display" class="result-display-box" style="display:none;">
+                <!-- የውጤት ዝርዝር እዚህ በጃቫስክሪፕት ይታያል -->
+            </div>
+        </section>
+
+        <!-- የፈተና ዶክመንቶች ማውረጃ (PDF Exams) -->
+        <section id="exams" class="section-card">
+            <h2><i class="fa-solid fa-file-pdf"></i> የፈተና ጥያቄዎች እና ማስተማሪያ ኖቶች (PDF)</h2>
+            <p>ለተማሪዎች የሚረዱ የፈተና ወረቀቶችን ከዚህ በታች ማውረድ ይችላሉ።</p>
+            
+            <div class="exam-list">
+                <div class="exam-item">
+                    <span><i class="fa-solid fa-file-arrow-down"></i> የ9ኛ ክፍል ሂሳብ አጋዥ ፈተና (PDF)</span>
+                    <a href="#" class="btn-download" onclick="alert('የፈተና ፋይሉ በቅርቡ ይጫናል!')">አውርድ</a>
+                </div>
+                <div class="exam-item">
+                    <span><i class="fa-solid fa-file-arrow-down"></i> የ10ኛ ክፍል እንግሊዝኛ ፈተና ዎርክሺት (PDF)</span>
+                    <a href="#" class="btn-download" onclick="alert('የፈተና ፋይሉ በቅርቡ ይጫናል!')">አውርድ</a>
+                </div>
+                <div class="exam-item">
+                    <span><i class="fa-solid fa-file-arrow-down"></i> የፊዚክስ እና ኬሚስትሪ ማጠቃለያ ሞዴል ፈተና (PDF)</span>
+                    <a href="#" class="btn-download" onclick="alert('የፈተና ፋይሉ በቅርቡ ይጫናል!')">አውርድ</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section-card">
+            <h2><i class="fa-solid fa-address-book"></i> እኛን ለማግኘት</h2>
+            <p>አድራሻ፡ አገው ግምጅቤት፣ አማራ፣ ኢትዮጵያ</p>
+            <p>ኢሜይል፡ info@agewgimjabetgss.edu.et | ስልክ፡ +251 9xxxxxxxx</p>
+        </section>
+
     </main>
 
     <footer>
