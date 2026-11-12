@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Agew Gimjabet General Secondary School</title>
+    <title>Agew Gimjabet General Secondary School | አገው ግምጅቤት አጠቃላይ ሁለተኛ ደረጃ ትምህርት ቤት</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
@@ -13,16 +13,20 @@
         <div class="container header-content">
             <div class="logo">
                 <i class="fa-solid fa-graduation-cap"></i>
-                <h1>አገው ግምጅቤት <span>አ/ሁ/ደ/ትምህርት ቤት</span></h1>
+                <div>
+                    <h1 class="lang-am">አገው ግምጅቤት <span>አ/ሁ/ደ/ትምህርት ቤት</span></h1>
+                    <h1 class="lang-en" style="display:none;">Agew Gimjabet <span>Secondary School</span></h1>
+                </div>
             </div>
             <nav>
                 <ul>
-                    <li><a href="#home">መነሻ</a></li>
-                    <li><a href="#about">ስለ እኛ</a></li>
-                    <li><a href="#register">ምዝገባ</a></li>
-                    <li><a href="#results">የውጤት ማጣሪያ</a></li>
-                    <li><a href="#exams">የፈተና ኖቶች (PDF)</a></li>
-                    <li><a href="#contact">አግኙን</a></li>
+                    <li><a href="#home" class="lang-am">መነሻ</a><a href="#home" class="lang-en" style="display:none;">Home</a></li>
+                    <li><a href="#about" class="lang-am">ስለ እኛ</a><a href="#about" class="lang-en" style="display:none;">About</a></li>
+                    <li><a href="#register" class="lang-am">ምዝገባ</a><a href="#register" class="lang-en" style="display:none;">Register</a></li>
+                    <li><a href="#results" class="lang-am">የውጤት ማጣሪያ</a><a href="#results" class="lang-en" style="display:none;">Results</a></li>
+                    <li><a href="#exams" class="lang-am">የፈተና ኖቶች</a><a href="#exams" class="lang-en" style="display:none;">Exams (PDF)</a></li>
+                    <li><a href="#contact" class="lang-am">አግኙን</a><a href="#contact" class="lang-en" style="display:none;">Contact</a></li>
+                    <li><button id="lang-toggle" class="btn-lang">English</button></li>
                 </ul>
             </nav>
         </div>
@@ -30,103 +34,120 @@
 
     <section id="home" class="hero">
         <div class="hero-text">
-            <h2>ለተሻለ እውቀት እና ስነ-ምግባር!</h2>
-            <p>ወደ አገው ግምጅቤት አጠቃላይ ሁለተኛ ደረጃ ትምህርት ቤት ኦፊሴላዊ ድረ-ገጽ በደህና መጡ። ጥራቱን የጠበቀ ትምህርት እና አገልግሎቶችን እዚህ ያገኛሉ።</p>
-            <a href="#register" class="btn-main">አሁን ይመዝገቡ</a>
+            <h2 class="lang-am">ለተሻለ እውቀት እና ስነ-ምግባር!</h2>
+            <h2 class="lang-en" style="display:none;">For Better Knowledge and Discipline!</h2>
+            
+            <p class="lang-am">ወደ አገው ግምጅቤት አጠቃላይ ሁለተኛ ደረጃ ትምህርት ቤት ኦፊሴላዊ ድረ-ገጽ በደህና መጡ። ጥራቱን የጠበቀ ትምህርት እና አገልግሎቶችን እዚህ ያገኛሉ።</p>
+            <p class="lang-en" style="display:none;">Welcome to the official website of Agew Gimjabet General Secondary School. Find quality education and services here.</p>
+            
+            <a href="#register" class="btn-main lang-am">አሁን ይመዝገቡ</a>
+            <a href="#register" class="btn-main lang-en" style="display:none;">Register Now</a>
         </div>
     </section>
 
     <main class="container">
         
         <section id="about" class="section-card">
-            <h2><i class="fa-solid fa-school"></i> ስለ ትምህርት ቤታችን</h2>
-            <p>ትምህርት ቤታችን ተማሪዎችን በዕውቀት፣ በክህሎት እና በስነ-ምግባር በማነጽ ለሀገር የሚጠቅሙ ብቁ ባለሙያዎችን እና ምሁራንን እያፈራ የሚገኝ ታላቅ ተቋም ነው።</p>
+            <h2><i class="fa-solid fa-school"></i> <span class="lang-am">ስለ ትምህርት ቤታችን</span><span class="lang-en" style="display:none;">About Our School</span></h2>
+            <p class="lang-am">ትምህርት ቤታችን ተማሪዎችን በዕውቀት፣ በክህሎት እና በስነ-ምግባር በማነጽ ለሀገር የሚጠቅሙ ብቁ ባለሙያዎችን እና ምሁራንን እያፈራ የሚገኝ ታላቅ ተቋም ነው።</p>
+            <p class="lang-en" style="display:none;">Our school is dedicated to empowering students with knowledge, skills, and ethical values to build capable professionals and scholars for the nation.</p>
         </section>
 
         <!-- የተማሪዎች ምዝገባ ፎርም -->
         <section id="register" class="section-card">
-            <h2><i class="fa-solid fa-user-plus"></i> የተማሪዎች ኦንላይን ምዝገባ ፎርም</h2>
-            <p>አዲስ የሚገቡ ተማሪዎች ከታች ያለውን ቅጽ በመሙላት ምዝገባዎን ማከናወን ይችላሉ።</p>
+            <h2><i class="fa-solid fa-user-plus"></i> <span class="lang-am">የተማሪዎች ኦንላይን ምዝገባ ፎርም</span><span class="lang-en" style="display:none;">Online Student Registration</span></h2>
+            <p class="lang-am">አዲስ የሚገቡ ተማሪዎች ከታች ያለውን ቅጽ በመሙላት ምዝገባዎን ማከናወን ይችላሉ።</p>
+            <p class="lang-en" style="display:none;">New students can complete their registration by filling out the form below.</p>
             
             <form id="reg-form" class="form-grid">
                 <div class="form-group">
-                    <label>ሙሉ ስም:</label>
+                    <label class="lang-am">ሙሉ ስም:</label><label class="lang-en" style="display:none;">Full Name:</label>
                     <input type="text" id="fullname" placeholder="ስም እና የአባት ስም" required>
                 </div>
                 <div class="form-group">
-                    <label>እድሜ:</label>
+                    <label class="lang-am">እድሜ:</label><label class="lang-en" style="display:none;">Age:</label>
                     <input type="number" id="age" placeholder="እድሜዎ" required>
                 </div>
                 <div class="form-group">
-                    <label>የሚገቡበት ክፍል:</label>
+                    <label class="lang-am">የሚገቡበት ክፍል:</label><label class="lang-en" style="display:none;">Grade Level:</label>
                     <select id="grade" required>
-                        <option value="">ክፍል ይምረጡ</option>
-                        <option value="9ኛ ክፍል">9ኛ ክፍል</option>
-                        <option value="10ኛ ክፍል">10ኛ ክፍል</option>
-                        <option value="11ኛ ክፍል">11ኛ ክፍል</option>
-                        <option value="12ኛ ክፍል">12ኛ ክፍል</option>
+                        <option value="" class="lang-am">ክፍል ይምረጡ</option><option value="" class="lang-en" style="display:none;">Select Grade</option>
+                        <option value="9ኛ ክፍል">9ኛ ክፍል / Grade 9</option>
+                        <option value="10ኛ ክፍል">10ኛ ክፍል / Grade 10</option>
+                        <option value="11ኛ ክፍል">11ኛ ክፍል / Grade 11</option>
+                        <option value="12ኛ ክፍል">12ኛ ክፍል / Grade 12</option>
                     </select>
                 </div>
                 <div class="form-group">
-                    <label>ስልክ ቁጥር:</label>
+                    <label class="lang-am">ስልክ ቁጥር:</label><label class="lang-en" style="display:none;">Phone Number:</label>
                     <input type="tel" id="phone" placeholder="09xxxxxxxx" required>
                 </div>
-                <button type="submit" class="btn-submit">ይመዝገቡ</button>
+                <button type="submit" class="btn-submit lang-am">ይመዝገቡ</button>
+                <button type="submit" class="btn-submit lang-en" style="display:none;">Register</button>
             </form>
-            <div id="success-msg" class="hidden-msg">መረጃዎ በተሳካ ሁኔታ ተመዝግቧል! እናመሰግናለን።</div>
+            <div id="success-msg" class="hidden-msg lang-am">መረጃዎ በተሳካ ሁኔታ ተመዝግቧል! እናመሰግናለን።</div>
+            <div id="success-msg-en" class="hidden-msg lang-en" style="display:none;">Your registration has been successfully submitted! Thank you.</div>
         </section>
 
         <!-- የውጤት ማጣሪያ ክፍል -->
         <section id="results" class="section-card">
-            <h2><i class="fa-solid fa-square-poll-vertical"></i> የሴሚስተር ውጤት ማጣሪያ</h2>
-            <p>የመለያ ቁጥርዎን (ID Number) በማስገባት የፈተና ውጤትዎን ይመልከቱ።</p>
+            <h2><i class="fa-solid fa-square-poll-vertical"></i> <span class="lang-am">የሴሚስተር ውጤት ማጣሪያ</span><span class="lang-en" style="display:none;">Semester Result Checker</span></h2>
+            <p class="lang-am">የመለያ ቁጥርዎን (ID Number) በማስገባት የፈተና ውጤትዎን ይመልከቱ።</p>
+            <p class="lang-en" style="display:none;">Check your exam results by entering your Student ID Number.</p>
             
             <div class="result-box">
-                <input type="text" id="student-id" placeholder="የመለያ ቁጥር ያስገቡ (ለምሳሌ: AGSS-101)">
-                <button id="check-result-btn" class="btn-main" style="border:none; cursor:pointer;">ውጤት አሳይ</button>
+                <input type="text" id="student-id" placeholder="የመለያ ቁጥር / Enter ID (e.g., AGSS-101)">
+                <button id="check-result-btn" class="btn-main lang-am" style="border:none; cursor:pointer;">ውጤት አሳይ</button>
+                <button id="check-result-btn-en" class="btn-main lang-en" style="border:none; cursor:pointer; display:none;">Check Result</button>
             </div>
             <div id="result-display" class="result-display-box" style="display:none;"></div>
         </section>
 
         <!-- የፈተና ዶክመንቶች ማውረጃ (PDF Exams) -->
         <section id="exams" class="section-card">
-            <h2><i class="fa-solid fa-file-pdf"></i> የፈተና ጥያቄዎች እና ማስተማሪያ ኖቶች (PDF)</h2>
-            <p>ለተማሪዎች የሚረዱ የፈተና ወረቀቶችን ከዚህ በታች ማውረድ ይችላሉ።</p>
+            <h2><i class="fa-solid fa-file-pdf"></i> <span class="lang-am">የፈተና ጥያቄዎች እና ማስተማሪያ ኖቶች (PDF)</span><span class="lang-en" style="display:none;">Exam Papers & Notes (PDF)</span></h2>
+            <p class="lang-am">ለተማሪዎች የሚረዱ የፈተና ወረቀቶችን ከዚህ በታች ማውረድ ይችላሉ።</p>
+            <p class="lang-en" style="display:none;">Download helpful exam papers and study worksheets below.</p>
             
             <div class="exam-list">
                 <div class="exam-item">
-                    <span><i class="fa-solid fa-file-arrow-down"></i> የ9ኛ ክፍል ሂሳብ አጋዥ ፈተና (PDF)</span>
-                    <a href="#" class="btn-download" onclick="alert('የፈተና ፋይሉ በቅርቡ ይጫናል!')">አውርድ</a>
+                    <span><i class="fa-solid fa-file-arrow-down"></i> <span class="lang-am">የ9ኛ ክፍል ሂሳብ አጋዥ ፈተና (PDF)</span><span class="lang-en" style="display:none;">Grade 9 Mathematics Worksheet (PDF)</span></span>
+                    <a href="url?id=6" class="btn-download lang-am">አውርድ</a>
+                    <a href="url?id=6" class="btn-download lang-en" style="display:none;">Download</a>
                 </div>
                 <div class="exam-item">
-                    <span><i class="fa-solid fa-file-arrow-down"></i> የ10ኛ ክፍል እንግሊዝኛ ፈተና ዎርክሺት (PDF)</span>
-                    <a href="#" class="btn-download" onclick="alert('የፈተና ፋይሉ በቅርቡ ይጫናል!')">አውርድ</a>
+                    <span><i class="fa-solid fa-file-arrow-down"></i> <span class="lang-am">የ10ኛ ክፍል እንግሊዝኛ ፈተና ዎርክሺት (PDF)</span><span class="lang-en" style="display:none;">Grade 10 English Exam Worksheet (PDF)</span></span>
+                    <a href="https://yamsew.github.io/agew-gimjabet-gss/#" class="btn-download lang-am">አውርድ</a>
+                    <a href="https://yamsew.github.io/agew-gimjabet-gss/#" class="btn-download lang-en" style="display:none;">Download</a>
                 </div>
                 <div class="exam-item">
-                    <span><i class="fa-solid fa-file-arrow-down"></i> የፊዚክስ እና ኬሚስትሪ ማጠቃለያ ሞዴል ፈተና (PDF)</span>
-                    <a href="#" class="btn-download" onclick="alert('የፈተና ፋይሉ በቅርቡ ይጫናል!')">አውርድ</a>
+                    <span><i class="fa-solid fa-file-arrow-down"></i> <span class="lang-am">የፊዚክስ እና ኬሚስትሪ ማጠቃለያ ሞዴል ፈተና (PDF)</span><span class="lang-en" style="display:none;">Physics & Chemistry Model Exam (PDF)</span></span>
+                    <a href="https://yamsew.github.io/agew-gimjabet-gss/#" class="btn-download lang-am">አውርድ</a>
+                    <a href="https://yamsew.github.io/agew-gimjabet-gss/#" class="btn-download lang-en" style="display:none;">Download</a>
                 </div>
             </div>
         </section>
 
-        <!-- አዲስ የተጨመረው እኛን የማግኘት እና ማህበራዊ ሚዲያ ክፍል -->
+        <!-- እኛን ለማግኘት እና ማህበራዊ ሚዲያ ክፍል -->
         <section id="contact" class="section-card">
-            <h2><i class="fa-solid fa-address-book"></i> እኛን ለማግኘት እና ማህበራዊ ሚዲያዎቻችን</h2>
-            <p>ለማንኛውም መረጃ ወይም ጥያቄ ከታች ባሉት አድራሻዎች ሊያገኙን ይችላሉ።</p>
+            <h2><i class="fa-solid fa-address-book"></i> <span class="lang-am">እኛን ለማግኘት እና ማህበራዊ ሚዲያዎቻችን</span><span class="lang-en" style="display:none;">Contact Us & Social Media</span></h2>
+            <p class="lang-am">ለማንኛውም መረጃ ወይም ጥያቄ ከታች ባሉት አድራሻዎች ሊያገኙን ይችላሉ።</p>
+            <p class="lang-en" style="display:none;">Reach out to us through the following contact details and social links.</p>
             
             <div class="contact-grid">
                 <div class="contact-info">
-                    <p><i class="fa-solid fa-location-dot"></i> <strong>አድራሻ፡</strong> አገው ግምጅቤት፣ አማራ፣ ኢትዮጵያ</p>
-                    <p><i class="fa-solid fa-envelope"></i> <strong>ኢሜይል፡</strong> info@agewgimjabetgss.edu.et</p>
-                    <p><i class="fa-solid fa-phone"></i> <strong>ስልክ ቁጥር፡</strong> +251 9xxxxxxxx / +251 58xxxxxxxx</p>
+                    <p><i class="fa-solid fa-location-dot"></i> <strong class="lang-am">አድራሻ፡</strong><strong class="lang-en" style="display:none;">Address:</strong> <span class="lang-am">አገው ግምጅቤት፣ አማራ፣ ኢትዮጵያ</span><span class="lang-en" style="display:none;">Agew Gimjabet, Amhara, Ethiopia</span></p>
+                    <p><i class="fa-solid fa-envelope"></i> <strong class="lang-am">ኢሜይል፡</strong><strong class="lang-en" style="display:none;">Email:</strong> info@agewgimjabetgss.edu.et</p>
+                    <p><i class="fa-solid fa-phone"></i> <strong class="lang-am">ስልክ ቁጥር፡</strong><strong class="lang-en" style="display:none;">Phone:</strong> +251 9xxxxxxxx / +251 58xxxxxxxx</p>
                 </div>
                 
                 <div class="social-links">
-                    <h3>ማህበራዊ ሚዲያ ገጾቻችን</h3>
+                    <h3 class="lang-am">ማህበራዊ ሚዲያ ገጾቻችን</h3>
+                    <h3 class="lang-en" style="display:none;">Our Social Media Pages</h3>
                     <div class="social-icons">
-                        <a href="https://t.me/agewgimjabetgss" target="_blank" class="social-btn telegram"><i class="fa-brands fa-telegram"></i> ቴሌግራም</a>
-                        <a href="https://facebook.com" target="_blank" class="social-btn facebook"><i class="fa-brands fa-facebook"></i> ፌስቡክ</a>
-                        <a href="https://youtube.com" target="_blank" class="social-btn youtube"><i class="fa-brands fa-youtube"></i> ዩቲዩብ</a>
+                        <a href="https://t.me/agewgimjabetgss" target="_blank" class="social-btn telegram"><i class="fa-brands fa-telegram"></i> Telegram</a>
+                        <a href="https://facebook.com/" target="_blank" class="social-btn facebook"><i class="fa-brands fa-facebook"></i> Facebook</a>
+                        <a href="https://youtube.com/" target="_blank" class="social-btn youtube"><i class="fa-brands fa-youtube"></i> YouTube</a>
                     </div>
                 </div>
             </div>
@@ -135,7 +156,8 @@
     </main>
 
     <footer>
-        <p>&copy; 2026 Agew Gimjabet General Secondary School. መብቱ በህግ የተጠበቀ ነው።</p>
+        <p class="lang-am">&copy; 2026 አገው ግምጅቤት አጠቃላይ ሁለተኛ ደረጃ ትምህርት ቤት። መብቱ በህግ የተጠበቀ ነው።</p>
+        <p class="lang-en" style="display:none;">&copy; 2026 Agew Gimjabet General Secondary School. All rights reserved.</p>
     </footer>
 
     <script src="script.js"></script>
